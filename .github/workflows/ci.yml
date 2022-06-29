@@ -17,7 +17,7 @@ on:
 jobs:
   
   # This workflow contains a single job called "build"
-  build:
+  ci:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -28,7 +28,7 @@ jobs:
       # Custom Action
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Build and Test
         uses: ./.github/workflows/composite-action
 #         run: echo Hello, world!
 
