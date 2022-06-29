@@ -23,9 +23,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: ./.github/workflows/composite-action
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      # Custom Action
+      - uses: ./.github/workflows/composite-action
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
