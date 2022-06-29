@@ -8,13 +8,14 @@ runs:
       with:
         node-version: 18  
     - run: npm install
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-  shell: bash
-    - run: |
-        echo "Executing action"
       shell: bash
+    - run: npm ci
+      shell: bash
+    - run: npm run build --if-present
+      shell: bash
+    - run: npm test
+      shell: bash
+  
     
 # name: Node.js CI
 
