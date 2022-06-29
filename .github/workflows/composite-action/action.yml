@@ -3,14 +3,19 @@ description: "Checks out the repository and does something"
 runs:
   using: "composite"
   steps:
-  - uses: actions/checkout@v3
-  - uses: actions/setup-node@v3
-    with:
-      node-version: 18  
-  - run: npm install
-  - run: npm ci
-  - run: npm run build --if-present
-  - run: npm test
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18  
+    - run: npm install
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+  shell: bash
+    - run: |
+        echo "Executing action"
+      shell: bash
+    
 # name: Node.js CI
 
 # on:
