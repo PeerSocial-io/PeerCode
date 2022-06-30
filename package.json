@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/PeerSocial-io/PeerCode#readme",
   "dependencies": {
-    "peersocial.io": "github:PeerSocial-io/PeerSocial.io"
+    "peersocial.io": "file:peersocial.io"
   }
 }
