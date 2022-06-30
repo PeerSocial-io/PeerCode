@@ -1,6 +1,6 @@
 define(function (require, exports, module) {
 
-  appPlugin.consumes = ["app", "plugin"];
+  appPlugin.consumes = ["app", "plugins"];
   appPlugin.provides = ["calculator"];
 
   /* global $ */

@@ -4,6 +4,7 @@
     "description": "",
     "main": "./plugin.js",
     "scripts": {
+        "start": "node ./server.js",
         "bash": "bash",
         "test": "node ./test"
     }
