@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
+    "setup": "sh ./setup.sh",
     "bash": "bash",
     "test": "node ./test"
   },
@@ -19,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/PeerSocial-io/PeerCode/issues"
   },
-  "homepage": "https://github.com/PeerSocial-io/PeerCode#readme",
-  "dependencies": {
-    "peersocial.io": "file:peersocial.io"
-  }
+  "homepage": "https://github.com/PeerSocial-io/PeerCode#readme"
 }
