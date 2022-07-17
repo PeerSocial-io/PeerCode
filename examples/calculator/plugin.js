@@ -14,7 +14,7 @@ function appPlugin(options, imports, register) {
   calculator.init = function () {
     state.$hash.on("/calculator", function (args, currentState, lastState, onDestroy) {
       //https://www.geeksforgeeks.org/html-calculator/
-      require(["./calculator.html"],function(calculator_html){
+      require(["text!./calculator.html"],function(calculator_html){
         $("#main-container").html(calculator_html)
 
 
