@@ -2,6 +2,8 @@
 appPlugin.consumes = ["app", "plugins", "state"];
 appPlugin.provides = ["calculator"];
 
+import require from 'require';
+
 function appPlugin(options, imports, register) {
 
   var Plugin = imports.plugins.Plugin;
