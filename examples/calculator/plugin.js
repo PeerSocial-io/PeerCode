@@ -14,7 +14,7 @@ function appPlugin(options, imports, register) {
   calculator.init = function () {
     state.$hash.on("/calculator", function (args, currentState, lastState, onDestroy) {
       //https://www.geeksforgeeks.org/html-calculator/
-      $("#main-container").html(require("text./calculator.html"))
+      $("#main-container").html(require("text!./calculator.html"))
       
       $("#main-container").find("input[value='c']").on("click", clr)
       var disA = [
